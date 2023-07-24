@@ -89,7 +89,7 @@ public class NotEqualTest {
 
         // when
         Specification<Person> specification = Specifications.<Person>and()
-                .ne("name", null)
+                .ne("name", (Object) null)
                 .ne("company", (Object) null)
                 .build();
 

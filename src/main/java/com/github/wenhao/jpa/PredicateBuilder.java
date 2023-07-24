@@ -21,28 +21,19 @@
  */
 package com.github.wenhao.jpa;
 
-import com.github.wenhao.jpa.specification.BetweenSpecification;
-import com.github.wenhao.jpa.specification.EqualSpecification;
-import com.github.wenhao.jpa.specification.GeSpecification;
-import com.github.wenhao.jpa.specification.GtSpecification;
-import com.github.wenhao.jpa.specification.InSpecification;
-import com.github.wenhao.jpa.specification.LeSpecification;
-import com.github.wenhao.jpa.specification.LikeSpecification;
-import com.github.wenhao.jpa.specification.LtSpecification;
-import com.github.wenhao.jpa.specification.NotEqualSpecification;
-import com.github.wenhao.jpa.specification.NotInSpecification;
-import com.github.wenhao.jpa.specification.NotLikeSpecification;
-import static javax.persistence.criteria.Predicate.BooleanOperator.OR;
+import com.github.wenhao.jpa.specification.*;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Predicate;
+import jakarta.persistence.criteria.Root;
 import org.springframework.data.jpa.domain.Specification;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
+
+import static jakarta.persistence.criteria.Predicate.BooleanOperator.OR;
 
 public class PredicateBuilder<T> {
 

@@ -74,7 +74,7 @@ dependencies {
     <version>3.2.5</version>
     <exclusions>
         <exclusion>
-            <groupId>org.hibernate.javax.persistence</groupId>
+            <groupId>org.hibernate.jakarta.persistence</groupId>
             <artifactId>hibernate-jpa-2.1-api</artifactId>
         </exclusion>
         <exclusion>
