@@ -1,10 +1,11 @@
 plugins {
-    id 'checkstyle'
+//    id 'checkstyle'
     id 'java-library'
     id 'signing'
     id 'jacoco'
+    id 'maven-publish'
     id "com.github.ksoichiro.spelling" version "0.1.1"
-    id 'com.github.ksoichiro.console.reporter' version '0.6.2'
+//    id 'com.github.ksoichiro.console.reporter' version '0.6.2'
     id "com.github.ben-manes.versions" version '0.22.0'
     id "net.rdrei.android.buildtimetracker" version "0.11.0"
     id "org.sonarqube" version "2.7.1"
